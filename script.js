@@ -6,7 +6,9 @@ const visitFigma = () => {
     const content = document.getElementById("blog-content");
 
     topic.innerHTML = "ขั้นตอนในการทำอาหาร";
-    content.innerHTML = "Today we're going to use figma for designing your first webapge. <br/>clicked time is " + counter;
-
+    if(counter == 1){
+        content.innerHTML = "Today we're going to use figma for designing your first webapge. <br/>clicked time is " + counter;
+    }
+    
     topic.style.color = "black"
 }
